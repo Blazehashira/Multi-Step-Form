@@ -21,6 +21,7 @@ body {
 
 /* Sidebar */
 .sideBar {
+  color: aliceblue;
   grid-area: sb;
   background-image: url("./images/bg-sidebar-desktop.svg");
   background-repeat: no-repeat;
@@ -45,6 +46,7 @@ body {
 }
 .sidebar-no {
   border-style: solid;
+  border-color: azure;
   font-size: 20px;
   padding: 0 11px;
   border-radius: 50%;
@@ -75,6 +77,4 @@ body {
   justify-content: flex-end;
 }
 
-/* .center-container {
-
-} */
+/* Section 2 */
