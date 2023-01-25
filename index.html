@@ -10,6 +10,13 @@
       href="./assets/images/favicon-32x32.png"
     />
     <title>Frontend Mentor | Multi-step form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="assets/styles.css" />
     <script
       defer
@@ -23,51 +30,69 @@
         font-size: 11px;
         text-align: center;
       }
+
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
     </style>
   </head>
+
   <body>
     <main class="container">
       <div class="center-container">
         <!-- Sidebar start -->
         <div class="sideBar">
           <ol>
-            <li>Step 1<span class="break-word">Your info</span> </li>
+            <li>Step 1<span class="break-word">Your info</span></li>
             <li>Step 2<span class="break-word">Select plan</span></li>
-            <li>Step 3<span class="break-word">Add-ons</span> </li>
+            <li>Step 3<span class="break-word">Add-ons</span></li>
             <li>Step 4<span class="break-word">Summary</span></li>
           </ol>
-        
         </div>
 
         <!-- Sidebar end -->
 
         <!-- Step 1 start-->
-       <form class="forms" action="">
-          <section id="section1">
-            <h1>Personal info</h1>
-            <p>Please provide your name, email address, and phone number.</p>
-            <div class="tab">
-              Name:
-              <p input aria-placeholder="e.g. Stephen King"></p>
-            </div>
-            <div class="tab">
-              Email Address:
-              <p input aria-placeholder="e.g. stephenking@lorem.com"></p>
-            </div>
-            <div class="tab">
-              Phone Number Email Address:
-              <p
+        <section id="section1">
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+          <form>
+            <div class="tab form-group">
+              <label for="Name field">Name</label>
+              <input
+                class="form-control"
+                type="text"
+                name="fName lName"
+                id=""
                 input
-                aria-placeholder=" e.g. +1 234 567
-            890 "
-              ></p>
-            </div> -->
-
-            <button>Next Step</button>
-          </section>
+                placeholder="e.g. Stephen King"
+              />
+            </div>
+            <div class="tab form-group">
+              <label for="InputEmail1">Email address</label>
+              <input
+                class="form-control"
+                type="email"
+                name=""
+                id=""
+                placeholder="e.g StephenKing@lorem.com"
+              />
+            </div>
+            <div class="tab form-group">
+              <label for="Phone number">Phone Number</label>
+              <input
+                type="number"
+                name="Phone Number"
+                id=""
+                class="form-control"
+                placeholder="e.g. +1 234 567890"
+              />
+            </div>
+          </form>
+          <div class="button-sect">
+            <button class="btn btn-dark">Next Step</button>
+          </div>
+        </section>
         <!-- Step 1 end -->
 
         <!-- Step 2 start -->
@@ -135,7 +160,6 @@
 
         <!-- Step 5 end -->
         <!-- </form> -->
-        -->
       </div>
     </main>
 
@@ -143,7 +167,12 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Nasir Sani</a>.
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -60,12 +60,25 @@
   display: block;
   margin-left: 30px;
 }
+
+/* Section 1 -Your info */
 #section1 {
   grid-area: mc;
+  margin: 10px 0 0 50px;
+  padding: 20px 40px 40px 40px;
 }
-.forms {
-  margin: 100px auto;
+#section1 form {
+  margin: 50px auto 100px;
 }
+.tab {
+  margin-top: 20px;
+}
+
+.button-sect {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* .center-container {
 
 } */
