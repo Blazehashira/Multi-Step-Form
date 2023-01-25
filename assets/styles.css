@@ -19,10 +19,40 @@
 }
 .sideBar {
   grid-area: sb;
-  background-image: url("/assets/images/bg-sidebar-desktop.svg");
-  margin: 10px 10px;
-  padding: 50px;
+  background-image: url("./images/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  padding: 0 19px;
   border-radius: 20px;
+  counter-reset: section;
+}
+.sideBar ol {
+  list-style: none;
+  counter-reset: item;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  justify-content: center;
+}
+.sideBar ol li::before {
+  content: counter(item);
+  counter-increment: item;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.sideBar ol li {
+  margin-top: 40px;
 }
 #section1 {
   grid-area: mc;
