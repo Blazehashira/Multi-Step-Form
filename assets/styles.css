@@ -1,6 +1,7 @@
-.body {
+body {
   margin: 0;
 }
+
 .container {
   display: flex;
   justify-content: center;
@@ -36,31 +37,26 @@
   display: flex;
   flex-direction: column;
   padding: 0 100px 0 0;
-
   justify-content: center;
 }
-.sideBar ol li::before {
-  content: counter(item);
-  counter-increment: item;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  background: #ccc;
-  color: #fff;
-  text-align: center;
-  line-height: 20px;
-  font-size: 12px;
-  display: inline-block;
-  margin-right: 10px;
-}
 .sideBar ol li {
-  margin-top: 30px;
+  margin-top: 28px;
+  display: flex;
 }
-.break-word {
-  display: block;
-  margin-left: 30px;
+.sidebar-no {
+  border-style: solid;
+  font-size: 20px;
+  padding: 0 11px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
-
+.sidebar-txt {
+  padding-left: 10px;
+}
+.sidebar-steps {
+  height: 20px;
+}
 /* Section 1 -Your info */
 #section1 {
   grid-area: mc;
