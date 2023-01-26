@@ -61,6 +61,7 @@ body {
 }
 /* Section 1 -Your info */
 #section1 {
+  display: none;
   grid-area: mc;
   margin: 10px 0 0 50px;
   padding: 20px 40px 40px 40px;
@@ -78,3 +79,85 @@ body {
 }
 
 /* Section 2 */
+#section2 {
+  margin: 10px 0 0 50px;
+  padding: 20px 40px 40px 40px;
+}
+.card-section {
+  margin: 50px 0 0;
+}
+.card-custom {
+  width: 165px;
+  height: 180px;
+  padding: 20px 15px;
+  background: white;
+  border-radius: 10px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.plan-card-img {
+  width: 50px;
+  margin: 0 0 45px;
+}
+.plan-duration {
+  text-align: center;
+  margin: 30px 0;
+  background-color: lightsteelblue;
+  border-radius: 5px;
+  padding: 10.5px;
+}
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.6rem;
+  margin: 0 30px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: navy;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  border-radius: 20px;
+  left: 0.27rem;
+  bottom: 0.25rem;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: navy;
+  border: 1px solid navy;
+}
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px navy;
+  box-shadow: 0 0 1px navy;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(1.4rem);
+  -ms-transform: translateX(1.4rem);
+  transform: translateX(1.4rem);
+  background-color: #fff;
+}
+.page-switch-buttons {
+  margin: 130px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
