@@ -123,54 +123,57 @@
         <section id="section2">
           <h2>Select your plan</h2>
           <p>You have the option of monthly or yearly billing.</p>
-          <div class="row card-section">
-            <div class="col-lg-4">
-              <div class="card-custom">
-                <img
-                  src="./assets/images/icon-arcade.svg"
-                  class="card-img-top plan-card-img"
-                  alt=""
-                />
-                <div class="card-body">
-                  <p class="card-title">Arcade</p>
-                  <p class="card-text">$9/mo</p>
+          <div class="card-deck">
+            <div class="row card-section">
+              <div class="col-lg-4">
+                <div class="card-custom">
+                  <img
+                    src="./assets/images/icon-arcade.svg"
+                    class="card-img-top plan-card-img"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <p class="card-title">Arcade</p>
+                    <p class="card-text">$9/mo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-custom">
+                  <img
+                    src="./assets/images/icon-advanced.svg"
+                    class="card-img-top plan-card-img"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <p class="card-title">Advanced</p>
+                    <p class="card-text">$12/mo</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card-custom">
+                  <img
+                    src="./assets/images/icon-pro.svg"
+                    class="card-img-top plan-card-img"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <p class="card-title">Pro</p>
+                    <p class="card-text">$15/mo</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="card-custom">
-                <img
-                  src="./assets/images/icon-advanced.svg"
-                  class="card-img-top plan-card-img"
-                  alt=""
-                />
-                <div class="card-body">
-                  <p class="card-title">Advanced</p>
-                  <p class="card-text">$12/mo</p>
-                </div>
-              </div>
+            <div class="plan-duration">
+              Monthly
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+              Yearly
             </div>
-            <div class="col-lg-4">
-              <div class="card-custom">
-                <img
-                  src="./assets/images/icon-pro.svg"
-                  class="card-img-top plan-card-img"
-                  alt=""
-                />
-                <div class="card-body">
-                  <p class="card-title">Pro</p>
-                  <p class="card-text">$15/mo</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="plan-duration">
-            Monthly
-            <label class="switch">
-              <input type="checkbox" />
-              <span class="slider"></span>
-            </label>
-            Yearly
           </div>
           <div class="page-switch-buttons">
             <button class="btn btn-light">Go Back</button>
@@ -180,28 +183,51 @@
         <!-- Step 2 end -->
 
         <!-- Step 3 start -->
-        <!-- <section id="section3">
-            <h1>Pick add-ons</h1>
-            <p>Add-ons help enhance your gaming experience.</p>
-            <div class="checkbox">
-              <input type="checkbox" name="" id="" /><span
-                >Online service <br />
-                Access to multiplayer games +$1/mo
-              </span>
-              <br />
-              <input type="checkbox" name="" id="" />
-              <span>
-                Larger storage <br />
-                Extra 1TB of cloud save +$2/mo
-              </span>
-              <input type="checkbox" name="" id="" />
-              <span>
-                Customizable Profile <br />
-                Custom theme on your profile +$2/mo
-              </span>
+        <section id="section3">
+          <h2>Pick add-ons</h2>
+          <p>Add-ons help enhance your gaming experience.</p>
+          <div class="">
+            <div class="checkbox-group">
+              <input
+                class="checkbox"
+                type="checkbox"
+                checked="checked"
+                name=""
+                id=""
+              />
+              <div class="checkmark"></div>
+
+              <div class="checkbox-text">
+                Online service Access to multiplayer games
+              </div>
+              <div>+$1/mo</div>
             </div>
-            <div><button>Go Back</button> <button>Next Step</button></div>
-          </section> -->
+            <div class="checkbox-group">
+              <input
+                class="checkbox"
+                type="checkbox"
+                checked="checked"
+                name=""
+                id=""
+              />
+              <div class="checkbox-text">
+                Larger storage Extra 1TB of cloud save
+              </div>
+              <div>+$2/mo</div>
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" name="" id="" />
+              <div class="checkbox-text">
+                Customizable Profile Custom theme on your profile
+              </div>
+              <div>+$2/mo</div>
+            </div>
+          </div>
+          <div class="page-switch-buttons">
+            <button class="btn btn-light">Go Back</button>
+            <button class="btn btn-dark">Next Step</button>
+          </div>
+        </section>
         <!-- Step 3 end -->
 
         <!-- Step 4 start -->
