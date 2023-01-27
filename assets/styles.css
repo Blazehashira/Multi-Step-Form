@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow: hidden;
 }
 .space-apart {
   display: flex;
@@ -8,12 +9,22 @@ body {
 .center-Align {
   align-items: center;
 }
-
+.display-flex {
+  display: flex;
+}
+.display-block {
+  display: block;
+}
+.display-none {
+  display: none;
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-height: 100vh;
+  margin-top: 15px;
 }
 .center-container {
   background-color: aliceblue;
@@ -23,8 +34,8 @@ body {
     "sb mc mc mc"
     "sb mc mc mc";
   border-radius: 20px;
-  width: 999px;
-  height: 615px;
+  width: 62.438rem;
+  height: 38.438rem;
 }
 
 /* Sidebar */
@@ -60,6 +71,10 @@ body {
   width: 40px;
   height: 40px;
 }
+.sidebar-1 {
+  background-color: #fff;
+  color: black;
+}
 .sidebar-txt {
   padding-left: 10px;
 }
@@ -68,7 +83,6 @@ body {
 }
 /* Section 1 -Your info */
 #section1 {
-  display: none;
   grid-area: mc;
   margin: 10px 80px 0 50px;
   padding: 20px 40px 40px 40px;
@@ -202,7 +216,7 @@ input:checked + .slider:before {
 
 /* Section 4 */
 #section4 {
-  /* display: none; */
+  display: none;
   margin: 10px 80px 0 50px;
   padding: 20px 40px 40px 40px;
 }
@@ -218,4 +232,16 @@ input:checked + .slider:before {
 }
 .addOn-spacing {
   margin-bottom: 8px;
+}
+
+/* Thanks section */
+#section5 {
+  display: none;
+  flex-direction: column;
+  place-items: center;
+  margin: 180px 100px;
+  text-align: center;
+}
+#section5 img {
+  margin-bottom: 40px;
 }
