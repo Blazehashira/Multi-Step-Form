@@ -106,7 +106,7 @@
             <div class="tab form-group">
               <label for="Phone number">Phone Number</label>
               <input
-                type="number"
+                type="text"
                 name="Phone Number"
                 id=""
                 class="form-control"
@@ -127,15 +127,19 @@
           <div class="card-deck">
             <div class="row card-section">
               <div class="col-lg-4">
-                <div class="card-custom">
+                <div class="card-custom one">
                   <img
                     src="./assets/images/icon-arcade.svg"
                     class="card-img-top plan-card-img"
                     alt=""
                   />
                   <div class="card-body">
-                    <p class="card-title">Arcade</p>
-                    <p class="card-text">$9/mo</p>
+                    <div class="plan-type">Arcade</div>
+                    <div class="month-plan2">$<span id="Price">9</span>/mo</div>
+                    <div class="discount2">
+                      $<span id="Price">90</span>/yr
+                      <div>2 months free</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -147,8 +151,14 @@
                     alt=""
                   />
                   <div class="card-body">
-                    <p class="card-title">Advanced</p>
-                    <p class="card-text">$12/mo</p>
+                    <div class="plan-type">Advanced</div>
+                    <div class="month-plan1">
+                      $<span id="Price">12</span>/mo
+                    </div>
+                    <div class="discount1">
+                      $<span id="Price">120</span>/yr
+                      <div>2 months free</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -161,8 +171,16 @@
                     alt=""
                   />
                   <div class="card-body">
-                    <p class="card-title">Pro</p>
-                    <p class="card-text">$15/mo</p>
+                    <div>
+                      <div class="plan-type">Pro</div>
+                      <div class="month-plan">
+                        $<span id="Price">15</span>/mo
+                      </div>
+                      <div class="discount">
+                        $<span id="Price">150</span>/yr
+                        <div>2 months free</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
