@@ -80,3 +80,7 @@ $(toggler).on("click", function () {
 });
 
 // $(".price")[0].innerText + $(".price")[0].innerText use this method to add price and add on for summary
+$(".card-custom").click(function () {
+  $(".card-custom").removeClass("selected");
+  $(this).addClass("selected");
+});
