@@ -71,16 +71,48 @@ $(".backTo-pg3").click(back2Page3);
 // Plan-toggle section
 var toggler = $("label.switch input[type=checkbox]")[0];
 $(toggler).on("click", function () {
-  $(".month-plan").toggle(500);
-  $(".month-plan1").toggle(500);
-  $(".month-plan2").toggle(500);
-  $(".discount").toggle(500);
-  $(".discount1").toggle(500);
-  $(".discount2").toggle(500);
+  $("#arcade_Month").toggleClass("no_Display");
+  $("#arcade_Year").toggleClass("no_Display");
+  $("#advanced_Month").toggleClass("no_Display");
+  $("#advanced_Year").toggleClass("no_Display");
+  $("#pro_Month").toggleClass("no_Display");
+  $("#pro_Year").toggleClass("no_Display");
 });
 
 // $(".price")[0].innerText + $(".price")[0].innerText use this method to add price and add on for summary
 $(".card-custom").click(function () {
   $(".card-custom").removeClass("selected");
   $(this).addClass("selected");
+});
+
+var selected_CardItems = [];
+$(".card-custom").on("click", function () {
+  console.log($(this).attr("id"));
+  switch ($(this).attr("id")) {
+    case "arcade_Month":
+      selected_CardItems = ["Arcade", "9", "/mo"];
+      break;
+
+    case "arcade_Year":
+      selected_CardItems = ["Arcade", "90", "/yr"];
+      break;
+
+    case "advanced_Month":
+      selected_CardItems = ["Advanced", "12", "/mo"];
+      break;
+
+    case "advanced_Year":
+      selected_CardItems = ["Advanced", "120", "/yr"];
+      break;
+
+    case "pro_Month":
+      selected_CardItems = ["Pro", "15", "/mo"];
+      break;
+
+    case "pro_Year":
+      selected_CardItems = ["Pro", "150", "/yr"];
+      break;
+    default:
+      console.log(selected_text);
+  }
 });

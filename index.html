@@ -127,7 +127,8 @@
           <div class="card-deck">
             <div class="row card-section">
               <div class="col-lg-4">
-                <div class="card-custom item">
+                <!-- month card -->
+                <div class="card-custom item" id="arcade_Month">
                   <img
                     src="./assets/images/icon-arcade.svg"
                     class="card-img-top plan-card-img"
@@ -135,28 +136,20 @@
                   />
                   <div class="card-body">
                     <div class="plan-type">Arcade</div>
-                    <div class="month-plan2">$<span id="Price">9</span>/mo</div>
-                    <div class="discount2">
-                      $<span id="Price">90</span>/yr
-                      <div>2 months free</div>
-                    </div>
+                    <div><span id="Price">9</span>/mo</div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card-custom item">
+                <!-- yearly card -->
+                <div class="card-custom item no_Display" id="arcade_Year">
                   <img
-                    src="./assets/images/icon-advanced.svg"
+                    src="./assets/images/icon-arcade.svg"
                     class="card-img-top plan-card-img"
                     alt=""
                   />
                   <div class="card-body">
-                    <div class="plan-type">Advanced</div>
-                    <div class="month-plan1">
-                      $<span id="Price">12</span>/mo
-                    </div>
-                    <div class="discount1">
-                      $<span id="Price">120</span>/yr
+                    <div class="plan-type">Arcade</div>
+                    <div>
+                      <span id="Price">90</span>/yr
                       <div>2 months free</div>
                     </div>
                   </div>
@@ -164,7 +157,39 @@
               </div>
 
               <div class="col-lg-4">
-                <div class="card-custom item">
+                <!-- month card -->
+                <div class="card-custom item" id="advanced_Month">
+                  <img
+                    src="./assets/images/icon-advanced.svg"
+                    class="card-img-top plan-card-img"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <div class="plan-type">Advanced</div>
+                    <div><span id="Price">12</span>/mo</div>
+                  </div>
+                </div>
+
+                <!-- year card -->
+                <div class="card-custom item no_Display" id="advanced_Year">
+                  <img
+                    src="./assets/images/icon-advanced.svg"
+                    class="card-img-top plan-card-img"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <div class="plan-type">Advanced</div>
+                    <div>
+                      <span id="Price">120</span>/yr
+                      <div>2 months free</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <!-- month card -->
+                <div class="card-custom item" id="pro_Month">
                   <img
                     src="./assets/images/icon-pro.svg"
                     class="card-img-top plan-card-img"
@@ -173,11 +198,23 @@
                   <div class="card-body">
                     <div>
                       <div class="plan-type">Pro</div>
-                      <div class="month-plan">
-                        $<span id="Price">15</span>/mo
-                      </div>
-                      <div class="discount">
-                        $<span id="Price">150</span>/yr
+                      <div><span id="Price">15</span>/mo</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- year card -->
+                <div class="card-custom item no_Display" id="pro_Year">
+                  <img
+                    src="./assets/images/icon-pro.svg"
+                    class="card-img-top plan-card-img"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <div>
+                      <div class="plan-type">Pro</div>
+                      <div>
+                        <span id="Price">150</span>/yr
                         <div>2 months free</div>
                       </div>
                     </div>
